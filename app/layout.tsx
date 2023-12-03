@@ -9,6 +9,8 @@ import ActiveSectionContextProvider from "@/context/active-section-context-provi
 import Skills from "@/components/skills";
 import Experience from "@/components/experience";
 import Contact from "@/components/contact";
+import { Toaster } from "react-hot-toast";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +32,7 @@ export default function RootLayout({
         <div className="-z-10 bg-[#fbe2e3] absolute top-[-6rem] right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem]"></div>
         <div className="-z-10 bg-[#dbd7fb] absolute top-[-6rem] right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] md: left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"></div>
         <ActiveSectionContextProvider>
+          <Toaster position="top-right" />
           <Header />
           <Intro />
           <About />
@@ -37,6 +40,7 @@ export default function RootLayout({
           <Skills />
           <Experience />
           <Contact />
+          <Footer />
         </ActiveSectionContextProvider>
 
         {children}
