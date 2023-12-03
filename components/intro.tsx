@@ -46,8 +46,8 @@ export const Intro = () => {
             lies in building websites and mobile applications, and I am focused
             on{" "}
           </span>
-          <span className="underline">React</span> and
-          <span className="underline"> Flutter</span>.
+          <span className="underline">React</span> and{" "}
+          <span className="underline">Flutter</span>.
         </motion.h1>
         <motion.div
           initial={{ opacity: 0, y: 100 }}
