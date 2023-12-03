@@ -18,9 +18,9 @@ const About = () => {
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
         In my career of software development I have worked in both web
-        development and android app development. I am a capable to work in
-        <span className="font-bold"> Flutter</span> and{" "}
-        <span className="font-bold"> React JS</span>.
+        development and android app development. I am a capable to work in{" "}
+        <span className="font-bold">Flutter</span> and{" "}
+        <span className="font-bold">React JS</span>.
       </p>
       <p>
         Currently my role as a{" "}
