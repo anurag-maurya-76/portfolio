@@ -64,20 +64,20 @@ export const Intro = () => {
             Contact me here <BsArrowRight />
           </Link>
           <a
-            className="bg-gray-50 text-black px-7 py-3 flex items-center gap-2 rounded-full active:scale-105 hover:scale-110 hover:bg-white transition cursor-pointer borderBlack"
+            className="bg-gray-50 text-black px-7 py-3 flex items-center gap-2 rounded-full active:scale-105 hover:scale-110 hover:bg-white transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
             href="/Resume.pdf"
           >
             Download CV <HiDownload />
           </a>
           <a
-            className="bg-gray-50 text-black px-5 py-4 flex items-center gap-2 rounded-full active:scale-105 hover:scale-110 hover:bg-white transition cursor-pointer borderBlack"
+            className="bg-gray-50 text-black px-5 py-4 flex items-center gap-2 rounded-full active:scale-105 hover:scale-110 hover:bg-white transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
             href={`${social.linkedIn}`}
             target="_blank"
           >
             <BsLinkedin />
           </a>
           <a
-            className="bg-gray-50 text-black px-5 py-4 flex items-center gap-2 rounded-full active:scale-105 hover:scale-110 hover:bg-white transition cursor-pointer borderBlack"
+            className="bg-gray-50 text-black px-5 py-4 flex items-center gap-2 rounded-full active:scale-105 hover:scale-110 hover:bg-white transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
             href={`${social.github}`}
             target="_blank"
           >
