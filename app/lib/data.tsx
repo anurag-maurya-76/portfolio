@@ -1,10 +1,9 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import unicampus from "@/public/unicampus.png";
+import wrappedGreen from "@/public/wrapped-green.png";
+import cab from "@/public/cab.png";
 
 export const social = {
   linkedIn: "https://www.linkedin.com/in/anurag-maurya-98870416a/",
@@ -41,72 +40,60 @@ export const links = [
 export const experiencesData = [
   {
     title: "Graduated bootcamp",
-    location: "Miami, FL",
+    location: "LEC Morbi, Gujarat",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I completed my bachelor's degree at LEC Morbi with a major in Information Technology. I completed my graduation with a CGPA of 9.12.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2018-2022",
   },
   {
     title: "Front-End Developer",
-    location: "Orlando, FL",
+    location: "UIDAI Bangalore, Karnataka",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I am now working as a Frontend developer at UIDAI, Bangalore. My stack includes Flutter, Dart, React, HTML, CSS, Javascript. I'm open to full-time opportunities.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2022 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "UniCampus",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Created an app that aimed to digitize major campus activities and make it easier for students' everyday lives.",
+    tags: ["Flutter", "Dart", "Firebase", "Android"],
+    imageUrl: unicampus,
   },
   {
-    title: "rmtDev",
+    title: "Wrapped Green",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Created an UI that is accessible on both desktop and mobile devices for restaurants.",
+    tags: ["React", "SCSS", "HTML", "JavaScript"],
+    imageUrl: wrappedGreen,
   },
   {
-    title: "Word Analytics",
+    title: "Cab App",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Developed a fully functional taxi app for both users and drivers. This app uses real-time location for routing and fare calculation.",
+    tags: ["Flutter", "Dart", "Firebase", "Android"],
+    imageUrl: cab,
   },
 ] as const;
 
 export const skillsData = [
+  "Flutter",
+  "Dart",
+  "State Management",
   "HTML",
   "CSS",
   "JavaScript",
   "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
-  "MongoDB",
   "Redux",
   "GraphQL",
   "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
   "Framer Motion",
 ] as const;

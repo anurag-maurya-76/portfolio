@@ -18,7 +18,7 @@ export const Intro = () => {
     <section
       ref={ref}
       id="home"
-      className="mb-28 text-center sm:mb-0 scroll-mt-28 mt-[6rem] max-w-[40rem]"
+      className="text-center scroll-mt-28 mt-[6rem] w-[min(90%,40rem)] "
     >
       <div className="flex justify-center items-center flex-col">
         <motion.div
@@ -32,20 +32,22 @@ export const Intro = () => {
           <Image
             alt="Profile"
             src={profile}
-            className="rounded-full border-white border-[0.35rem] h-[8rem] w-[8rem] shadow-xl"
+            className="rounded-full border-white border-[0.35rem] h-[8rem] w-[8rem] shadow-xl my-10"
           />
         </motion.div>
         <motion.h1
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mt-4 mb-10 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+          className="mt-4 mb-10 text-2xl font-medium !leading-[1.5] sm:text-3xl"
         >
           <span className="font-bold">Hello, I am Anurag. </span>
           <span>
-            I am a Frontend Developer with 2 years of experience. I enjoy
-            building sites and apps. My focus is{" "}
+            I am a Frontend Developer with 1.5 years of experience. My passion
+            lies in building websites and mobile applications, and I am focused
+            on{" "}
           </span>
-          <span className="underline">React (Next.js)</span>
+          <span className="underline">React</span> and
+          <span className="underline"> Flutter</span>.
         </motion.h1>
         <motion.div
           initial={{ opacity: 0, y: 100 }}
@@ -66,23 +68,26 @@ export const Intro = () => {
           <a
             className="bg-gray-50 text-black px-7 py-3 flex items-center gap-2 rounded-full active:scale-105 hover:scale-110 hover:bg-white transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
             href="/Resume.pdf"
+            target="_blank"
           >
             Download CV <HiDownload />
           </a>
-          <a
-            className="bg-gray-50 text-black px-5 py-4 flex items-center gap-2 rounded-full active:scale-105 hover:scale-110 hover:bg-white transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-            href={`${social.linkedIn}`}
-            target="_blank"
-          >
-            <BsLinkedin />
-          </a>
-          <a
-            className="bg-gray-50 text-black px-5 py-4 flex items-center gap-2 rounded-full active:scale-105 hover:scale-110 hover:bg-white transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-            href={`${social.github}`}
-            target="_blank"
-          >
-            <FaGithub />
-          </a>
+          <div className="flex gap-4">
+            <a
+              className="bg-gray-50 text-black px-5 py-4 flex items-center gap-2 rounded-full active:scale-105 hover:scale-110 hover:bg-white transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+              href={`${social.linkedIn}`}
+              target="_blank"
+            >
+              <BsLinkedin />
+            </a>
+            <a
+              className="bg-gray-50 text-black px-5 py-4 flex items-center gap-2 rounded-full active:scale-105 hover:scale-110 hover:bg-white transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+              href={`${social.github}`}
+              target="_blank"
+            >
+              <FaGithub />
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>

@@ -14,7 +14,7 @@ const Contact = () => {
     <motion.section
       id="contact"
       ref={ref}
-      className="w-[min(100%,38rem)]"
+      className="w-[min(90%,38rem)] scroll-mt-28 mt-28"
       initial={{
         opacity: 1,
       }}
@@ -31,7 +31,7 @@ const Contact = () => {
         or through this form
       </p>
       <form
-        className="mt-10 flex flex-col dark:text-black"
+        className="mt-10 flex flex-col dark:text-white"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
           if (error) {
@@ -46,14 +46,14 @@ const Contact = () => {
           name="senderEmail"
           required
           maxLength={100}
-          className="h-14 borderBlack rounded-lg p-4 dark:bg-white/80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-14 borderBlack rounded-lg p-4 dark:bg-white/10 dark:focus:bg-white/20 transition-all dark:outline-none autofill:!bg-white/10"
           placeholder="Your Email"
         />
         <textarea
           required
           name="message"
           maxLength={5000}
-          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white/80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white/10 dark:focus:bg-white/20 transition-all dark:outline-none"
           placeholder="Your Message"
         />
         <SubmitButton />

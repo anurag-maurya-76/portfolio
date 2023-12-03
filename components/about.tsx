@@ -13,34 +13,30 @@ const About = () => {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
-      className="max-w-[45rem] text-center leading-8 scroll-mt-28"
+      className="w-[min(90%,45rem)]  text-center leading-8 scroll-mt-28 mt-28"
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        In my career of software development I have worked in both web
+        development and android app development. I am a capable to work in
+        <span className="font-bold"> Flutter</span> and{" "}
+        <span className="font-bold"> React JS</span>.
+      </p>
+      <p>
+        Currently my role as a{" "}
+        <span className="underline">Flutter developer</span> involves creating
+        complex Stateful Widgets, handling form, designing beautiful UIs, and
+        handling API calls. As a{" "}
+        <span className="underline">React developer</span> I am working on
+        creating reusable component, using Redux and reducer along with making
+        custom hooks, passing context between components. Alongside standard
+        https requests, I also worked making Apollo Graphql calls.
       </p>
 
       <p>
         <span className="italic">When I am not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I am also
-        learning how to play the guitar.
+        video games, doing gym and watching movies. I also enjoy{" "}
+        <span className="font-medium">learning new things</span>.
       </p>
     </motion.section>
   );

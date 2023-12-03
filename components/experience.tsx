@@ -15,7 +15,11 @@ const Experience = () => {
   const { ref } = useSectionInView("Experience", 0.3);
   const { theme } = useTheme();
   return (
-    <section id="experience" ref={ref}>
+    <section
+      id="experience"
+      ref={ref}
+      className="scroll-mt-28 mt-28 w-[min(90%,60rem)] "
+    >
       <SectionHeading>Experience</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((experience, index) => (
