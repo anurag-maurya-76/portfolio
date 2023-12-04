@@ -4,7 +4,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { links } from "@/app/lib/data";
 import Link from "next/link";
-import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context-provider";
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
@@ -35,13 +34,12 @@ export default function Header() {
                   setActiveSection(link.name);
                   setTimeOfLastClick(Date.now());
                 }}
-                className={clsx(
-                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300 ",
-                  {
-                    "text-gray-950 dark:text-gray-300":
-                      activeSection == link.name,
-                  }
-                )}
+                className={`flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-white ${
+                  activeSection == link.name
+                    ? "text-gray-950 dark:text-gray-100"
+                    : ""
+                }
+                `}
               >
                 {link.name}
                 {activeSection == link.name && (
