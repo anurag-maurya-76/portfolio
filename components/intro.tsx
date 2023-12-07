@@ -7,7 +7,7 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
-import { social } from "@/app/lib/data";
+import { intro, social } from "@/app/lib/data";
 import { useSectionInView } from "@/app/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context-provider";
 
@@ -32,27 +32,33 @@ export const Intro = () => {
           <Image
             alt="Profile"
             src={profile}
-            className="rounded-full border-white border-[0.35rem] h-[8rem] w-[8rem] shadow-xl my-10"
+            className="rounded-3xl border-white/25 border-[0.35rem] h-[11rem] w-[11rem] shadow-2xl my-10"
           />
         </motion.div>
         <motion.h1
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mt-4 mb-10 text-2xl font-medium !leading-[1.5] sm:text-3xl"
+          className="mt-4 mb-10 font-medium text-3xl"
         >
-          <span className="font-bold">Hello, I am Anurag. </span>
-          <span>
-            I am a Frontend Developer with 1.5 years of experience. My passion
-            lies in building websites and mobile applications, and I am focused
-            on{" "}
-          </span>
-          <span className="underline">React</span> and{" "}
-          <span className="underline">Flutter</span>.
+          <p className="font-bold mb-5">{intro.title}</p>
+          {intro.subtitle.split("").map((value, key) => {
+            return (
+              <motion.span
+                key={key}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: key * 0.01, ease: "circInOut" }}
+                className="text-xl !leading-[0.8]"
+              >
+                {value}
+              </motion.span>
+            );
+          })}
         </motion.h1>
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
+          transition={{ delay: 0.01 * (intro.subtitle.length + 5) }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 text-lg font-medium"
         >
           <Link

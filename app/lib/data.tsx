@@ -10,6 +10,12 @@ export const social = {
   github: "https://github.com/anurag-maurya-76",
 };
 
+export const intro = {
+  title: "Hello It's Me, Anurag Maurya.",
+  subtitle:
+    "I am a Frontend Developer with 1.5 years of experience. My passion lies in building websites and mobile applications, and I am focused on React and Flutter.",
+};
+
 export const links = [
   {
     name: "Home",
