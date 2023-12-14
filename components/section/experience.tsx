@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import SectionHeading from "./reusable/section-heading";
+import SectionHeading from "../reusable/section-heading";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -18,7 +18,7 @@ const Experience = () => {
     <section
       id="experience"
       ref={ref}
-      className="scroll-mt-28 mt-28 w-[min(90%,60rem)] "
+      className="mt-28 w-[min(90%,60rem)] scroll-mt-28 "
     >
       <SectionHeading>Experience</SectionHeading>
       <VerticalTimeline lineColor="">
@@ -48,7 +48,7 @@ const Experience = () => {
               }}
             >
               <h3 className="font-semibold capitalize">{experience.title}</h3>
-              <p className="font-normal !mt-0">{experience.location}</p>
+              <p className="!mt-0 font-normal">{experience.location}</p>
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {experience.description}
               </p>

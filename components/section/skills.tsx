@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import SectionHeading from "./reusable/section-heading";
+import SectionHeading from "../reusable/section-heading";
 import { skillsData } from "@/app/lib/data";
 import { useSectionInView } from "@/app/lib/hooks";
 import { motion } from "framer-motion";
@@ -19,9 +19,9 @@ const fadeInAnimationVariants = {
 const Skills = () => {
   const { ref } = useSectionInView("Skills", 0.5);
   return (
-    <section id="skills" ref={ref} className="scroll-mt-28 mt-28 max-w-[45rem]">
+    <section id="skills" ref={ref} className="mt-28 max-w-[45rem] scroll-mt-28">
       <SectionHeading>Skills</SectionHeading>
-      <ul className="flex flex-wrap gap-2 justify-center text-lg text-gray-800">
+      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => {
           return (
             <motion.li
@@ -32,7 +32,7 @@ const Skills = () => {
               }}
               variants={fadeInAnimationVariants}
               key={index}
-              className="bg-white borderBlack rounded-xl px-5 py-3 dark:text-white/80 dark:bg-white/10"
+              className="borderBlack rounded-xl bg-white px-5 py-3 dark:bg-white/10 dark:text-white/80"
               custom={index}
             >
               {skill}

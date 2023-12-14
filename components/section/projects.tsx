@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import SectionHeading from "./reusable/section-heading";
+import SectionHeading from "../reusable/section-heading";
 import { projectsData } from "@/app/lib/data";
-import Project from "./reusable/project";
+import Project from "../reusable/project";
 import { useSectionInView } from "@/app/lib/hooks";
 
 const Projects = () => {
@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="w-[min(90%,38rem)] scroll-mt-28 mt-28"
+      className="mt-28 w-[min(90%,38rem)] scroll-mt-28"
       ref={ref}
     >
       <SectionHeading>Projects</SectionHeading>

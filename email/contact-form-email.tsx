@@ -22,7 +22,7 @@ const ContactFormEmail = ({ message, senderEmail }: ContactFormEmailProps) => {
       <Head></Head>
       <Tailwind>
         <Container className="bg-gray-100 text-black">
-          <Section className="bg-white borderBlack my-10 px-10 py-4">
+          <Section className="borderBlack my-10 bg-white px-10 py-4">
             <Heading className="leading-tight">
               You received the following Email
             </Heading>

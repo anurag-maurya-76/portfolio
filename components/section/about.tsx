@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import SectionHeading from "./reusable/section-heading";
+import SectionHeading from "../reusable/section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/app/lib/hooks";
 
@@ -10,10 +10,11 @@ const About = () => {
     <motion.section
       ref={ref}
       id="about"
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.175 }}
-      className="w-[min(90%,45rem)]  text-center leading-8 scroll-mt-28 mt-28"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ delay: 0.175, duration: 1.5 }}
+      className="mt-28  w-[min(90%,45rem)] scroll-mt-28 text-center leading-8"
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">

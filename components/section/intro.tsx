@@ -18,9 +18,9 @@ export const Intro = () => {
     <section
       ref={ref}
       id="home"
-      className="text-center scroll-mt-28 mt-[6rem] w-[min(90%,40rem)] "
+      className="mt-[6rem] w-[min(90%,40rem)] scroll-mt-28 text-center "
     >
-      <div className="flex justify-center items-center flex-col">
+      <div className="flex flex-col items-center justify-center">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -32,15 +32,15 @@ export const Intro = () => {
           <Image
             alt="Profile"
             src={profile}
-            className="rounded-3xl border-white/25 border-[0.35rem] h-[11rem] w-[11rem] shadow-2xl my-10"
+            className="my-[1.3rem] h-[11rem] w-[11rem] rounded-3xl border-[0.35rem] border-white/25 shadow-2xl sm:my-10"
           />
         </motion.div>
         <motion.h1
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mt-4 mb-10 font-medium text-3xl"
+          className="mb-10 mt-4 text-3xl font-medium"
         >
-          <p className="font-bold mb-5">{intro.title}</p>
+          <p className="mb-5 font-bold">{intro.title}</p>
           {intro.subtitle.split("").map((value, key) => {
             return (
               <motion.span
@@ -59,7 +59,7 @@ export const Intro = () => {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.01 * (intro.subtitle.length + 5) }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 text-lg font-medium"
+          className="flex flex-col items-center justify-center gap-4 text-lg font-medium sm:flex-row"
         >
           <Link
             href="#contact"
@@ -67,12 +67,12 @@ export const Intro = () => {
               setActiveSection("Contact");
               setTimeOfLastClick(Date.now());
             }}
-            className="bg-gray-800 text-white px-7 py-3 flex items-center gap-2 rounded-full active:scale-105 hover:scale-110 hover:bg-gray-950 transition"
+            className="flex items-center gap-2 rounded-full bg-gray-800 px-7 py-3 text-white transition hover:scale-110 hover:bg-gray-950 active:scale-105"
           >
             Contact me here <BsArrowRight />
           </Link>
           <a
-            className="bg-gray-50 text-black px-7 py-3 flex items-center gap-2 rounded-full active:scale-105 hover:scale-110 hover:bg-white transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-gray-50 px-7 py-3 text-black transition hover:scale-110 hover:bg-white active:scale-105 dark:bg-white/10 dark:text-white/60"
             href="/Resume.pdf"
             target="_blank"
           >
@@ -80,14 +80,14 @@ export const Intro = () => {
           </a>
           <div className="flex gap-4">
             <a
-              className="bg-gray-50 text-black px-5 py-4 flex items-center gap-2 rounded-full active:scale-105 hover:scale-110 hover:bg-white transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+              className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-gray-50 px-5 py-4 text-black transition hover:scale-110 hover:bg-white active:scale-105 dark:bg-white/10 dark:text-white/60"
               href={`${social.linkedIn}`}
               target="_blank"
             >
               <BsLinkedin />
             </a>
             <a
-              className="bg-gray-50 text-black px-5 py-4 flex items-center gap-2 rounded-full active:scale-105 hover:scale-110 hover:bg-white transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+              className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-gray-50 px-5 py-4 text-black transition hover:scale-110 hover:bg-white active:scale-105 dark:bg-white/10 dark:text-white/60"
               href={`${social.github}`}
               target="_blank"
             >

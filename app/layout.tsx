@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
-import { Intro } from "@/components/intro";
-import About from "@/components/about";
-import Projects from "@/components/projects";
+import { Intro } from "@/components/section/intro";
+import About from "@/components/section/about";
+import Projects from "@/components/section/projects";
 import ActiveSectionContextProvider from "@/context/active-section-context-provider";
-import Skills from "@/components/skills";
-import Experience from "@/components/experience";
-import Contact from "@/components/contact";
+import Skills from "@/components/section/skills";
+import Experience from "@/components/section/experience";
+import Contact from "@/components/section/contact";
 import { Toaster } from "react-hot-toast";
 import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
@@ -29,10 +29,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} bg-gray-50 text-gray-950 relative flex flex-col items-center dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
+        className={`${inter.className} relative flex flex-col items-center bg-gray-50 text-gray-950 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
-        <div className="-z-10 bg-[#ffc5c7] absolute top-[-6rem] right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"></div>
-        <div className="-z-10 bg-[#c8c1ff] absolute top-[-6rem] right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] md: left-[-20rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
+        <div className="absolute right-[11rem] top-[-6rem] -z-10 h-[31.25rem] w-[31.25rem] rounded-full bg-[#ffc5c7] blur-[10rem] dark:bg-[#946263] sm:w-[68.75rem]"></div>
+        <div className="md: absolute left-[-20rem] right-[11rem] top-[-6rem] -z-10 h-[31.25rem] w-[31.25rem] rounded-full bg-[#c8c1ff] blur-[10rem] dark:bg-[#676394] sm:w-[68.75rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"></div>
         <ThemeContextProvider>
           <ThemeSwitch />
           <ActiveSectionContextProvider>
