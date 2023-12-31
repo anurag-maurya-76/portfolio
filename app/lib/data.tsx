@@ -69,6 +69,7 @@ export const projectsData = [
       "Created an app that aimed to digitize major campus activities and make it easier for students' everyday lives.",
     tags: ["Flutter", "Dart", "Firebase", "Android"],
     imageUrl: unicampus,
+    link: "https://www.linkedin.com/posts/anurag-maurya-98870416a_teameffort-flutter-flutterapp-activity-6937284272483377152-qzUr",
   },
   {
     title: "Wrapped Green",
@@ -76,6 +77,7 @@ export const projectsData = [
       "Created an UI that is accessible on both desktop and mobile devices for restaurants.",
     tags: ["React", "SCSS", "HTML", "JavaScript"],
     imageUrl: wrappedGreen,
+    link: null,
   },
   {
     title: "Cab App",
@@ -83,6 +85,7 @@ export const projectsData = [
       "Developed a fully functional taxi app for both users and drivers. This app uses real-time location for routing and fare calculation.",
     tags: ["Flutter", "Dart", "Firebase", "Android"],
     imageUrl: cab,
+    link: "https://www.linkedin.com/posts/anurag-maurya-98870416a_flutter-firebase-flutterdev-activity-6811193740384899072-a__f",
   },
 ] as const;
 
