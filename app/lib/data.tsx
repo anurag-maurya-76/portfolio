@@ -83,7 +83,7 @@ export const projectsData = [
   {
     title: "Wrapped Green",
     description:
-      "Created an UI that is accessible on both desktop and mobile devices for restaurants.",
+      "Created an dummy UI website for restaurants that is accessible on desktop.",
     tags: ["React", "SCSS", "HTML", "JavaScript"],
     imageUrl: wrappedGreen,
     link: "https://github.com/anurag-maurya-76/wrapped-green-ui",
