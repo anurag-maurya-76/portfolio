@@ -31,7 +31,7 @@ const Project = ({
       }}
       className="group relative mb-3 max-w-[42rem] cursor-pointer overflow-hidden rounded-lg border border-black/5 bg-gray-100 transition last:mb-0 hover:bg-gray-200 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 sm:mb-8 sm:h-[20rem] sm:pr-8 sm:odd:pl-8"
     >
-      <a href={link ?? ""} target="_blank">
+      <a href={link} target="_blank">
         <div className="flex h-full flex-col px-5 pb-8 pt-4 sm:max-w-[50%] sm:pl-10 sm:pr-2 sm:pt-10 sm:group-odd:ml-[17rem]">
           <h3 className="flex gap-2 text-2xl font-semibold">
             {title}

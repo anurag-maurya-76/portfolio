@@ -5,6 +5,14 @@ import unicampus from "@/public/unicampus.png";
 import wrappedGreen from "@/public/wrapped-green.png";
 import cab from "@/public/cab.png";
 
+const totalExperience =
+  Math.floor(
+    (((new Date().getFullYear() - new Date("06/16/2022").getFullYear()) * 12 +
+      (new Date().getMonth() - new Date("06/16/2022").getMonth())) /
+      12) *
+      100,
+  ) / 100;
+
 export const social = {
   linkedIn: "https://www.linkedin.com/in/maurya-anurag/",
   github: "https://github.com/anurag-maurya-76",
@@ -14,8 +22,7 @@ export const social = {
 
 export const intro = {
   title: "Hello It's Me, Anurag Maurya.",
-  subtitle:
-    "I am a Frontend Developer with 1.5 years of experience. My passion lies in building websites and mobile applications, and I am focused on React and Flutter.",
+  subtitle: `I'm a Software Engineer with ${totalExperience} years of experience. My keen interest lies in developing websites and mobile applications, and my specialization revolves around ReactJS and Flutter.`,
 };
 
 export const links = [
@@ -47,7 +54,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
+    title: "Graduation (Gold Medalist)",
     location: "LEC Morbi, Gujarat",
     description:
       "I completed my bachelor's degree at LEC Morbi with a major in Information Technology. I completed my graduation with a CGPA of 9.12.",
@@ -58,7 +65,7 @@ export const experiencesData = [
     title: "Front-End Developer",
     location: "UIDAI Bangalore, Karnataka",
     description:
-      "I am now working as a Frontend developer at UIDAI, Bangalore. My stack includes Flutter, Dart, React, HTML, CSS, Javascript. I'm open to full-time opportunities.",
+      "Currently employed as a Frontend Developer at UIDAI in Bangalore, I am proficient in utilizing a technology stack that encompasses Flutter, ReactJS and Springboot. I am actively seeking full-time opportunities.",
     icon: React.createElement(CgWorkAlt),
     date: "2022 - present",
   },
@@ -79,7 +86,7 @@ export const projectsData = [
       "Created an UI that is accessible on both desktop and mobile devices for restaurants.",
     tags: ["React", "SCSS", "HTML", "JavaScript"],
     imageUrl: wrappedGreen,
-    link: null,
+    link: "https://github.com/anurag-maurya-76/wrapped-green-ui",
   },
   {
     title: "Cab App",
