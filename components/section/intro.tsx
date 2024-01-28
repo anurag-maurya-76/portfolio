@@ -4,12 +4,12 @@ import Image from "next/image";
 import React from "react";
 import profile from "@/public/profile.jpeg";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { intro, social } from "@/app/lib/data";
 import { useSectionInView } from "@/app/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context-provider";
+import { RxExternalLink } from "react-icons/rx";
 
 export const Intro = () => {
   const { ref } = useSectionInView("Home", 0.8);
@@ -73,22 +73,22 @@ export const Intro = () => {
           </Link>
           <a
             className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-gray-50 px-7 py-3 text-black transition hover:scale-110 hover:bg-white active:scale-105 dark:bg-white/10 dark:text-white/60"
-            href="/Resume.pdf"
+            href={social.resume}
             target="_blank"
           >
-            Download CV <HiDownload />
+            View Resume <RxExternalLink />
           </a>
           <div className="flex gap-4">
             <a
               className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-gray-50 px-5 py-4 text-black transition hover:scale-110 hover:bg-white active:scale-105 dark:bg-white/10 dark:text-white/60"
-              href={`${social.linkedIn}`}
+              href={social.linkedIn}
               target="_blank"
             >
               <BsLinkedin />
             </a>
             <a
               className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-gray-50 px-5 py-4 text-black transition hover:scale-110 hover:bg-white active:scale-105 dark:bg-white/10 dark:text-white/60"
-              href={`${social.github}`}
+              href={social.github}
               target="_blank"
             >
               <FaGithub />

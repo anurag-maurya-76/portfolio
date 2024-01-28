@@ -6,8 +6,10 @@ import wrappedGreen from "@/public/wrapped-green.png";
 import cab from "@/public/cab.png";
 
 export const social = {
-  linkedIn: "https://www.linkedin.com/in/anurag-maurya-98870416a/",
+  linkedIn: "https://www.linkedin.com/in/maurya-anurag/",
   github: "https://github.com/anurag-maurya-76",
+  resume:
+    "https://docs.google.com/document/d/155B1Z379vI-A9KgLZRBDQkTlMHEM3V5GqyINX_d6-64/edit",
 };
 
 export const intro = {
